@@ -1,0 +1,9 @@
+ @charset "UTF-8"; 
+ /* regra @charset caso haja prblemas com acentuação */
+ 
+h1 {
+    color:rgb(223, 119, 136);
+}
+body{
+    background-color: brown;
+}
