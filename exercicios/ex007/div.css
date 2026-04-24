@@ -1,0 +1,18 @@
+*{ 
+    text-align: center;
+}
+#secao{
+    width: 500px;
+    height: 200px;
+    background-color: #CFCAE8;
+    border: 10px solid #0D0533;
+}
+
+#caixa {
+    width: 100%;
+
+    padding: 30px;
+    border: 5px solid #625893;
+
+    box-sizing: border-box;
+}

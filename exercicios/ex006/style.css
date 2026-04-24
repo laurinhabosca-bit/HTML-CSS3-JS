@@ -1,0 +1,19 @@
+*{
+        margin: auto;
+
+}
+
+h1{
+    background-color: rgb(118, 223, 188);
+    padding-bottom: 10px;
+    margin-top: 100px;
+    outline-width: 100px;
+    /* ALTURA E COMPRIMENTO */
+    width: 200px;
+    text-align: center;
+}
+h2{
+    background-color: rgb(194, 159, 226);
+    width: 80px;
+    text-align: center;
+}
