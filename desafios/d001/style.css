@@ -1,0 +1,101 @@
+@charset "UFT-8"; /* é uma regra para que o CSS aceite caracteres de lingua portuguesa */
+
+/* elemento pai de todos os elementos */
+:root{
+    --cor_fundo_principal: #D4E8FF;
+    --cor_header: #0C1E33;
+    --cor_nav: #588ECC;
+    --cor_footer: #033267;
+    --cor_highlight: #BB9044;
+    
+    --main_Font: 'Ribeye', 'cursive';
+    --header_text_color: #D4E8FF;
+    --size_main_font: 50px;
+
+    --text_secondary:'Times New Roman','Arial',  'cursive';
+
+    --text_on_hover: #664203; 
+
+    --main_color: white;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: var(--cor_fundo_principal);
+
+}
+
+header {
+    text-align: center;
+    background-color: var(--cor_header);
+
+    color: var(--header_text_color);
+
+    padding: 5px;
+
+}
+
+header h1 {
+    font-family: var(--main_Font);
+    font-size: var(--size_main_font);
+
+}
+
+header {
+    font-family: var(--text_secondary);
+
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor_nav);
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+
+    display: inline-block;
+
+    transition: all 0.5s ease;
+
+}
+
+nav a:hover {
+    color: var(text_on_hover);
+
+    transform: scale(1.4);
+
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    background-color: var(--main_color);
+    padding: 50px;
+
+}
+
+main article h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(***);
+
+}
+
+main article h2 {
+    text-align: center;
+    background-color: rgba(129, 176, 214, 0.445);
+    padding: 5px;
+
+    border-radius: 25px;
+}
