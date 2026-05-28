@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+:root {
+    --cor_fundo_principal: ;
+    --cor_header: ;
+    --cor_nav: ;
+    --cor_footer: ;
+    --cor_highlights: ;
+    --cor_do_texto: ;
+    --main_font: 'Roboto Mono', 'cursive';
+    --font_sizeh1: 70px;
+    --text_secundary: 'Rubik', 'Roboto Mono', 'cursive';
+    --cor_nav_2: ;
+    --main_color: ;
+    --font_h2: 40px;
+    --main_colorP: ;
+    --font_size_asideP: ;
+    --font_size_footerP: ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor_fundo_principal);
+}
+
+header {
+    text-align: ;
+    background-color: var(--cor_header);
+    color: var(--cor_do_texto);
+    padding: 5px;
+}
+
+header h1 {
+    font-family: var(--main_font);
+    font-size: var(--font_sizeh1);
+}
+
+header p {
+    font-family: var(--text_secundary);
+}
+
+nav {
+    text-align: ;
+    padding: 20px;
+    background-color: var(--cor_nav);
+
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    color: var(--cor_nav_2);
+    transform: scale(1.2);
+}
+
+main {
+    margin:auto;
+
+    max-width: 800px;
+    min-width: 320px;
+
+    background: var(--main_color);
+    padding: 50px;
+}
+
+main p {
+    line-height: 1.4;
+}
+
+main article h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(--text_secundary);
+    font-size: var(--font_sizeh1);
+}
+
+main article h2 {
+    font-size: var(--font_h2);
+    padding: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+aside {
+    margin-top: 10px;
+    background-color: ;
+    padding: 20px;
+    border-radius: 10px;
+
+    transition: all 0.5s ease;
+}
+
+aside:hover {
+    box-shadow: 2px 2px 30px 5px black;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--cor_footer);
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+#icon-git {
+    display: inline-block;
+    height: 30px;
+    width: auto;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(text_on_hover);
+}
