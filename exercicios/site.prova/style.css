@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 :root {
-    --cor_fundo_principal: ;
-    --cor_header: ;
+    --cor_fundo_principal:#ffdee9;
+    --cor_header: white;
     --cor_nav: ;
     --cor_footer: ;
     --cor_highlights: ;
-    --cor_do_texto: ;
+    --cor_do_texto_h1:#591d32;
+    --cor_do_texto_h2:#e0e0e0;
     --main_font: 'Roboto Mono', 'cursive';
     --font_sizeh1: 70px;
     --text_secundary: 'Rubik', 'Roboto Mono', 'cursive';
@@ -29,9 +30,9 @@ body {
 }
 
 header {
-    text-align: ;
+    text-align:center;
     background-color: var(--cor_header);
-    color: var(--cor_do_texto);
+    color: var(--cor_do_texto_h1);
     padding: 5px;
 }
 
