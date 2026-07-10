@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*regra de acentuação*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
+
+:root {
+    --cor_background: white;
+    --cor_game_container: #8598E8;
+    --cor_game_container_border: #413785;
+    --cor_da_cobra: #FFBB00;
+    --cor_title: #43B740;
+    --main_font_family: 'Pixel Geist';
+;
+
+}
+
+body {
+    background: var(--cor_background);
+}
+
+.gameContainer {
+    width: 600px;
+    height: 600px;
+    background-color: var(--cor_game_container);
+    border-radius: 20px;
+    border: 8px solid var(--cor_game_container_border);
+    /* grossura = 8px, tipo = solido, cor = roxo escuro */
+    margin: auto;
+    position: relative;
+}
+
+.menuGame {
+    position: absolute;
+    width: 200px;
+    background-color: #1A365B;
+    padding: 10px;
+    /* top, bottom, left, right */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: var(--main_font_family);
+    color: var(--cor_title);
+    font-size: ;
+}
+
+#btn-start:hover {
+    background-color: var();
+}
