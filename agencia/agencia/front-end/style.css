@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+    --cor_fundo_principal: #346F74;
+    --cor_header: #113D3F;
+    --cor_do_texto_h1: #B7D7DB;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    text-align:center;
+    background-color: var(--cor_fundo_principal);
+}
+
+div {
+    background-color: var(--cor_header);
+    margin: 300px auto; 
+    padding: 20px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: -5px 5px 5px #6CA1A7;
+}
+
+h1 {
+    color: var(--cor_do_texto_h1);
+    margin-bottom: 10px;
+}
+
+#agencia {
+    margin-bottom: 5px;
+    
+}
+
+#agencia, #buscarId {
+    padding: 5px;
+}
+
+button {
+    
+    color: var(--cor_do_texto_h1);
+
+}

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agências</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #resultado { white-space: pre-line; }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Agências</h1>
+        <form method="GET">
+            <input type="text" name="agencia" placeholder="CIA, MOSSAD ou ABIN" id="agencia">
+            <button type="submit">Buscar</button>
+        </form>
+        <form id="form-id">
+            <input type="number" name="id" placeholder="id do espião" id="buscarId">
+            <button type="submit">Buscar por id</button>
+        </form>
+    </div>
+
+    <p id="resultado"></p>
+
+
+    <script>
+        const form = document.querySelector('form');
+        const resultado = document.querySelector('#resultado');
+
+        async function buscar(event) {
+            event.preventDefault();
+
+            const agencia = form.agencia.value;
+            const resposta = await fetch(
+                `http://localhost:8080/espioes?agencia=${encodeURIComponent(agencia)}`
+            );
+
+            if (!resposta.ok) {
+                resultado.textContent = 'Agência não encontrada.';
+                return;
+            }
+
+            const espioes = await resposta.json();
+
+            if (espioes.length === 0) {
+                resultado.textContent = 'Nenhum espião nessa agência.';
+                return;
+            }
+
+            let texto = '';
+            for (const espiao of espioes) {
+                texto += `${espiao.nomeEspiao} (${espiao.nomeReal}): ${espiao.descricao}\n`;
+            }
+            resultado.textContent = texto;
+        }
+
+        form.addEventListener('submit', buscar);
+        const formId = document.querySelector('#form-id');
+        
+        // Segunda consulta
+        async function buscarPorId(event) {
+            event.preventDefault();
+
+            const id = formId.id.value;
+            const resposta = await fetch(
+                `http://localhost:8080/espioes/resumo?id=${encodeURIComponent(id)}`
+            );
+
+            if (!resposta.ok) {
+                resultado.textContent = 'Espião não encontrado.';
+                return;
+            }
+
+            resultado.textContent = await resposta.text();
+        }
+
+        formId.addEventListener('submit', buscarPorId);
+    </script>
+</body>
+</html>
