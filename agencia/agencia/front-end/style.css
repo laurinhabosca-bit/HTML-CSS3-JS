@@ -20,9 +20,9 @@ div {
     background-color: var(--cor_header);
     margin: 300px auto; 
     padding: 20px;
-    width: 450px;
+    width: 500px;
     border-radius: 20px;
-    box-shadow: -5px 5px 5px #6CA1A7;
+    box-shadow: -30px 20px 5px #6CA1A7;
 }
 
 h1 {
